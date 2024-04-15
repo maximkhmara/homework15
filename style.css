@@ -137,7 +137,12 @@ textarea {
   font-size: 18px;
   color: #fff;
   margin-bottom: 20px;
+  margin-top: 40px;
   padding: 6px 20px;
+}
+.form-submit-btn.disable {
+  pointer-events: none;
+  background: #d1d1d1;
 }
 .order {
   display: none;
@@ -154,4 +159,13 @@ textarea {
 }
 .order-content div{
   margin-bottom: 15px;
+}
+
+.name-error-text, .phone-error-text, .email-error-text {
+  position: absolute;
+  left: 15px;
+  bottom: -19px;
+  color: rgb(242, 70, 70);
+  font-size: 14px;
+  display: none;
 }

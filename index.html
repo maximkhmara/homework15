@@ -7,12 +7,6 @@
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<picture>
-			<source media="(max-width: 650px)" srcset="/images/first-320w.png" />
-			<source media="(max-width: 999px)" srcset="/images/first-999w.png" />
-			<source media="(min-width: 1000px)" srcset="/images/first-1000w.png" />
-			<img src="/images/first-1000w.png" alt="img" />
-		</picture>
 		<main class="main">
 			<div class="shop-product">
 				<div class="shop-product-image">
@@ -26,59 +20,29 @@
 			<form action="" class="buy-form">
 				<div class="buy-form-input field-wpapper">
 					<input
-						class="form-field"
+						class="form-field user-name-check"
 						type="text"
 						placeholder="ПІБ"
 						name="username" />
-					<div class="buy-form-input-error-text">Заповніть поле</div>
-				</div>
-				<div class="buy-form-select field-wpapper">
-					<select name="citybuy" id="buy-select" class="form-field">
-						<option value="" disabled selected>Оберіть місто</option>
-						<option value="Київ">Київ</option>
-						<option value="Харків">Харків</option>
-						<option value="Одеса">Одеса</option>
-						<option value="Дніпро">Дніпро</option>
-						<option value="Донецьк">Донецьк</option>
-						<option value="Запоріжжя">Запоріжжя</option>
-						<option value="Львів">Львів</option>
-						<option value="Кривий Ріг">Кривий Ріг</option>
-						<option value="Миколаїв">Миколаїв</option>
-						<option value="Маріуполь">Маріуполь</option>
-					</select>
-					<div class="buy-form-input-error-text">Заповніть поле</div>
+					<div class="name-error-text">Введіть три слова з великої букви</div>
 				</div>
 				<div class="buy-form-input field-wpapper">
 					<input
-						class="form-field"
+						class="form-field user-phone-check"
 						type="text"
-						placeholder="Склад Нової пошти "
-						name="branch" />
-					<div class="buy-form-input-error-text">Заповніть поле</div>
-				</div>
-				<div class="buy-form-select field-wpapper">
-					<select name="typepay" id="type-pay" class="form-field">
-						<option value="" disabled selected>Форма оплати</option>
-						<option value="Післяплата">Післяплата</option>
-						<option value="Оплата карткою">Оплата карткою</option>
-					</select>
-					<div class="buy-form-input-error-text">Заповніть поле</div>
+						placeholder="Phone"
+						name="phone" />
+					<div class="phone-error-text">Введіть номер телефону коректно</div>
 				</div>
 				<div class="buy-form-input field-wpapper">
 					<input
-						class="form-field"
-						type="number"
-						placeholder="Кількість продукції, що купується"
-						name="quantity" />
-					<div class="buy-form-input-error-text">Заповніть поле</div>
+						class="form-field user-email-check"
+						type="text"
+						placeholder="Email"
+						name="email" />
+					<div class="email-error-text">Введіть email коректно</div>
 				</div>
-				<div class="buy-textarea">
-					<textarea
-						name="comment"
-						id="textarea-comment"
-						placeholder="Коментар"></textarea>
-				</div>
-				<button class="form-submit-btn" type="submit">
+				<button class="form-submit-btn disable" type="submit">
 					Підтвердити замовлення
 				</button>
 			</form>
